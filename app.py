@@ -5,7 +5,7 @@ from  nltk.tokenize import word_tokenize
 
 app = Flask(__name__)
 
-nltk.download('punkt_tab')
+nltk.download('punkt')
 
 with open('knowledge.json') as f:
     knowledge = json.load(f)
@@ -26,6 +26,8 @@ def index():
 @app.route('/chat', methods=['POST'])
 def chat():
     user_input = request.json.get('message')
+    if not user_input or not user_input.strip():
+        return jsonify({'response': "Please enter a message."})
     response = recognize_intent(user_input)
     print(f"User: {user_input}")
     print(f"Bot: {response}")
