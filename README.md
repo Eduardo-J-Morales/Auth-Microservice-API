@@ -29,7 +29,13 @@ A simple and interactive chatbot designed to assist customers by answering frequ
     git clone https://github.com/Eduardo-J-Morales/Customer-Service-FAQ-Chatbot.git
     cd Customer-Service-FAQ-Chatbot
      ```
-    
+
+2. ### Create a virtual environment
+```sh
+python3 -m venv venv
+source venv/bin/activate
+```
+
 2. ### Install dependencies:
     ```sh
     pip install -r requirements.txt
