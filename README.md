@@ -39,3 +39,7 @@ A simple and interactive chatbot designed to assist customers by answering frequ
     ```sh
     python app.py
     ```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
